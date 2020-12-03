@@ -6,6 +6,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.sun.istack.NotNull;
+
 @Entity
 @Table(name = "denuncias")
 public class Denuncia {
@@ -13,12 +15,19 @@ public class Denuncia {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	@NotNull
 	private String name;
+	@NotNull
 	private Integer age;
+	@NotNull
 	private String phone;
+	@NotNull
 	private String assediotype;
+	@NotNull
 	private String description;
+	@NotNull
 	private String local;
+	@NotNull
 	private boolean incontact;
 	
 	

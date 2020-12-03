@@ -20,6 +20,7 @@ import com.denuncia.api.domain.model.Denuncia;
 import com.denuncia.api.domain.repository.DenunciaRepository;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("/denuncias")
 
 public class DenunciaController {
@@ -38,4 +39,4 @@ public class DenunciaController {
 		
 	}
 	
-}
+} 
